@@ -1,0 +1,29 @@
+{
+  "length": {
+    "base": {
+      "type": "dimension",
+      "value": "4"
+    },
+    "1x": {
+      "type": "dimension",
+      "value": "{length.base}",
+      "$extensions": {
+        "scale": 1
+      }
+    },
+    "2x": {
+      "type": "dimension",
+      "value": "{length.base}",
+      "$extensions": {
+        "scale": 2
+      }
+    },
+    "3x": {
+      "type": "dimension",
+      "value": "{length.base}",
+      "$extensions": {
+        "scale": 3
+      }
+    }
+  }
+}

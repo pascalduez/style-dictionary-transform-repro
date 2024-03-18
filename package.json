@@ -1,0 +1,16 @@
+{
+  "name": "style-dictionary-transform-repro",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "prebuild": "del dist/"
+  },
+  "packageManager": "npm@10.5.0+sha256.17ca6e08e7633b624e8f870db81a78f46afe119de62bcaf0a7407574139198fc",
+  "devDependencies": {
+    "del-cli": "^5.1.0",
+    "prettier": "^3.2.5",
+    "style-dictionary": "^3.9.2"
+  }
+}
