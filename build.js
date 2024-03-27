@@ -7,9 +7,12 @@ let transform = {
     type: 'value',
     transitive: true,
     matcher: token =>
-      token.type === 'dimension' && Object.hasOwn(token, '$extensions'),
-    transformer: token => {
-      return token.value * token.$extensions.scale;
+      token.type === 'dimension' &&
+      Object.hasOwn(token, '$extensions') &&
+      token.$extensions?.use === 'scale',
+    transformer: (token, options) => {
+      let scale = parseFloat(options.basePxLength);
+      return (token.value * scale).toFixed(0) + 'px';
     },
   },
 };
@@ -21,6 +24,7 @@ let transformGroup = {
 let platforms = {
   css: {
     buildPath,
+    basePxLength: '4px',
     transformGroup: 'repro:styles',
     files: [
       {

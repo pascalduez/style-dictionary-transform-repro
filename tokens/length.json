@@ -2,27 +2,27 @@
   "length": {
     "base": {
       "type": "dimension",
-      "value": "4"
+      "value": "4px"
     },
     "1x": {
       "type": "dimension",
-      "value": "{length.base}",
+      "value": 1,
       "$extensions": {
-        "scale": 1
+        "use": "scale"
       }
     },
     "2x": {
       "type": "dimension",
-      "value": "{length.base}",
+      "value": 2,
       "$extensions": {
-        "scale": 2
+        "use": "scale"
       }
     },
     "3x": {
       "type": "dimension",
-      "value": "{length.base}",
+      "value": 3,
       "$extensions": {
-        "scale": 3
+        "use": "scale"
       }
     }
   }
